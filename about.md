@@ -11,4 +11,4 @@ A place to include any other types of information that you'd like to include abo
 
 ### Contact me
 
-[aadilislam4600@gmail.com](mailto:email@domain.com)
+[aadilislam460@gmail.com](mailto:email@domain.com)
