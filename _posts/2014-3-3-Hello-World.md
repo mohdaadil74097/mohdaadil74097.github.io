@@ -1,8 +1,7 @@
 ---
 layout: post
-title: You're up and running!
+title: About the Coredge.
 ---
-About the Coredge
 Coredge is a product based company.
 Coredge works on private cloud named openstack
 services offered by them are given below.
