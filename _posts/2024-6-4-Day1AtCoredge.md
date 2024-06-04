@@ -13,7 +13,7 @@ and how to make changes in the github repo,etc.
 ---
 layout: post
 title: Day 2 At Coredge as a linux admin trainee
-date: 2024-6-3
+date: 2024-6-4
 ---
 
 It's day two as a Linux Admin Trainee at Coredge, feeling good!
