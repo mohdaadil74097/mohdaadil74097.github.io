@@ -7,8 +7,12 @@ Name - Mohd Aadil
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Hello Everyone I am Mohd Aadil, I am a Linux admin 
+and currently working as a linux admin trainee at coredge.io
 
 ### Contact me
-
-[aadilislam460@gmail.com](mailto:email@domain.com)
+---
+Mobile No. - 7409779781
+---
+Email ID. - aadilislam460@gmail.com
+---
