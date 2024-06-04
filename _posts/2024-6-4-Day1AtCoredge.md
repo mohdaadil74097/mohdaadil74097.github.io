@@ -10,11 +10,6 @@ The team is helpful, and I’m excited to learn more and get better at my job!
 I have learned some basics about the Github like how to make repository
 and how to make changes in the github repo,etc.
 
----
-layout: post
-title: Day 2 At Coredge as a linux admin trainee
-date: 2024-6-4
----
 
 It's day two as a Linux Admin Trainee at Coredge, feeling good!
 I have some answers of the questions asked by Satya like
