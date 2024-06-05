@@ -15,7 +15,7 @@
  ---
   - Git is a free and open source distributed version control system design to handle small to large project  with speed and efficiency.
  ---
-**GitHub->**
+- **GitHub->**
  ---
   - Github is a website which allows developers to store and manage their code by using git.
  ---
@@ -55,7 +55,7 @@
 
 **3-> Ignored**
 ---
-- These are the files that you have told Git to ignore (usually show in a .gitignore file).
+ - These are the files that you have told Git to ignore (usually show in a .gitignore file).
 ---
 **For Making Changes and Uploading it on GitHub File->**
 ---
