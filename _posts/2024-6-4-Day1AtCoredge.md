@@ -11,7 +11,6 @@ I have learned some basics about the Github like how to make repository
 and how to make changes in the github repo,etc.
 
 
-It's day two as a Linux Admin Trainee at Coredge, feeling good!
 I have some answers of the questions asked by Satya like
 
 Q1-> What is the difference between Open Source and FOSS ?
