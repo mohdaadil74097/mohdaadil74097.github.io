@@ -11,6 +11,7 @@ So I am starting with one of these topic which is Basic commands in linux and sh
 
 **Here are some Basic Command and its work.**
 ---
+
  - **ls** - listing the content in a directory.
  - **cp** - copying a file from one location to another.
  - **mv** - moving a file from one location to another and we can also rename a file by using the mv command.
@@ -23,4 +24,5 @@ So I am starting with one of these topic which is Basic commands in linux and sh
  - **man** - used for reading the manual of a command.
  - **cat** - used for printing the content inside a file.
  - **man** - used for reading the manual of a command.
+
 ---
