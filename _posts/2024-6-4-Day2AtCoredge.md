@@ -49,9 +49,9 @@
 ---
 - These are the files which git keeps track record. These are of three type that are given below.
 ---
-**Unmodified**
-**Modified**
-**staged**
+- **Unmodified**
+- **Modified**
+- **staged**
 
 **3-> Ignored**
 ---
