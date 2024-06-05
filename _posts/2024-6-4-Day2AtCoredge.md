@@ -10,10 +10,10 @@ I learned some basics of Git and GitHub by Manoj my Colleague
 Here are some detail I shared with you guys
 
 
-**Git**
+**Git->**
 Git is a free and open source distributed version control system design to handle small to large project  with speed and efficiency.
 
-**GitHub**
+**GitHub->**
 Github is a website which allows developers to store and manage their code by using git.
 
 Note->> Folder in which the data is shared is called repository or repos in the git.
