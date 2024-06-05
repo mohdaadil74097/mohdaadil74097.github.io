@@ -10,6 +10,3 @@ services offered by them are given below.
 - IT infrastructure
 - Enterprise software Development
 - Business to Business
-- **what is shell**
-- Shell is an interpreter or interface where we can run commands and script.
-- different shells are - sh, bash, ksh, csh, tsh, zsh and fish.
