@@ -8,6 +8,7 @@
   ---
     - I learned some basics of Git and GitHub by Manoj my Colleague.
     - Here are some detail I shared with you guys.
+
   ---
 
 - **Git**
@@ -17,6 +18,7 @@
 - **GitHub**
   ---
    - Github is a website which allows developers to store and manage their code by using git.
+     
   ---
     Note->> Folder in which the data is shared is called repository or repos in the git.
 
@@ -36,17 +38,20 @@
 
  - Status-> To Display the state of code 
  - git status
+   
 ---
 
 **Types of Status of files in Git**
 - **1-> Untracked**
 ---
  - These are the files which git not keeping track. Generally these are the new files.
+   
 ---
 
 - **2-> Tracked**
 ---
 - These are the files which git keeps track record. These are of three type that are given below.
+  
 ---
 - **Unmodified**
 - **Modified**
@@ -55,8 +60,10 @@
 - **3-> Ignored**
 ---
  - These are the files that you have told Git to ignore (usually show in a .gitignore file).
+   
 ---
 **For Making Changes and Uploading it on GitHub File->**
+
 ---
 - Here are some steps to do the given task.
 
