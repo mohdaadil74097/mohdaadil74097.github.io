@@ -11,11 +11,12 @@
 
   ---
 
-- **Git **
+**Git**
    ---
     - Git is a free and open source distributed version control system design to handle small to large project  with speed and efficiency.
+    
    ---
-- **GitHub**
+**GitHub**
   ---
    - Github is a website which allows developers to store and manage their code by using git.
      
