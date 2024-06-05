@@ -57,9 +57,9 @@
 ---
 - These are the files that you have told Git to ignore (usually show in a .gitignore file).
 ---
-**For Making Changes and Uploading it on GitHub File**
+**For Making Changes and Uploading it on GitHub File->**
 ---
-- Here are some steps to do the above task.
+- Here are some steps to do the given task.
 
 - 1-> First of all you have to add the filename in which you did the changes by the command.
 git add <filename>
