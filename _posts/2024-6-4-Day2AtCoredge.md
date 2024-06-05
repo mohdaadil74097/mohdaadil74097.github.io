@@ -10,11 +10,9 @@
     - Here are some detail I shared with you guys.
 
   ---
-
 **Git**
    ---
     - Git is a free and open source distributed version control system design to handle small to large project  with speed and efficiency.
-    
    ---
 **GitHub**
   ---
