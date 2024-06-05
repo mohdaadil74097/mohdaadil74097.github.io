@@ -39,12 +39,12 @@
 ---
 
 **Types of Status of files in Git**
-**1-> Untracked**
+- **1-> Untracked**
 ---
  - These are the files which git not keeping track. Generally these are the new files.
 ---
 
-**2-> Tracked**
+- **2-> Tracked**
 ---
 - These are the files which git keeps track record. These are of three type that are given below.
 ---
@@ -52,7 +52,7 @@
 - **Modified**
 - **staged**
 
-**3-> Ignored**
+- **3-> Ignored**
 ---
  - These are the files that you have told Git to ignore (usually show in a .gitignore file).
 ---
