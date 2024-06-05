@@ -5,11 +5,10 @@
 ---
 
 **It's day two as a Linux Admin Trainee at Coredge and it is a great day!**
-
- ---
+---
   - I learned some basics of Git and GitHub by Manoj my Colleague
   - Here are some detail I shared with you guys
- ---
+---
 
 **Git->**
  ---
