@@ -29,13 +29,13 @@
 ---
 **Clone and Status**
 ---
-- Clone-> Command for Cloning a repo on our local machine.
-- git clone <https link from the github>
+ - Clone-> Command for Cloning a repo on our local machine.
+ - git clone <https link from the github>
 
-- Note-> README.md -> Here .md stands for MarkDown.
+ - Note-> README.md -> Here .md stands for MarkDown.
 
-- Status-> To Display the state of code 
-- git status
+ - Status-> To Display the state of code 
+ - git status
 ---
 
 **Types of Status of files in Git**
