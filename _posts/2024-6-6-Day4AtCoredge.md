@@ -1,1 +1,1 @@
-hlo Frineds I am back to my blog
+Hlo this is day 4 at coredge as a linux admin trainee
