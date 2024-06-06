@@ -31,5 +31,23 @@ linux machine.
    escap key, 'w' for write and 'q' is for quite and ! .
 6. Now your file has been edited.
 
+**Playing with file inside the VIM**
 
-
+We can do these things in command mode
+syntax with number of lines use 'n' before the operation where 'n' stands for number of lines
+1. yy-> Used for yanked or copying the lines.
+2. p-> is for pasting the lines.
+3. dd-> is used for deleting the file.
+4. set number-> Used for giving the numbers to lines in file.
+5. set nonumber-> is for removing the numbers given to lines in a file.
+6. u-> is stands for undo
+7. a,o,i,ins key-> ways to go in insert mode in a file.
+8. left,right,up,down-> is used for moving cursor in a file.
+9. /<word>-> used for searching words in a file.
+10. :<LineNo.>-> used for moving the cursor on the given line number.
+11. gg-> if for moving the cursor on home page or the starting of the file.
+12. G-> Moving the cursor on the last of the file.
+13. w-> used for moving the cursor on the starting of the next word.
+14. b-> used for moving the cursor on the starting of the previous word.
+15. d-> used for deleting the selected line in a file.
+16. u-> undo the changes in a file
