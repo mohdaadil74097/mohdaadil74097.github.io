@@ -43,8 +43,8 @@ syntax with number of lines use 'n' before the operation where 'n' stands for nu
 6. **u**-> is stands for undo
 7. **a,o,i,ins key**-> ways to go in insert mode in a file.
 8. **left,right,up,down**-> is used for moving cursor in a file.
-9. **/<word>**-> used for searching words in a file.
-10. **:<LineNo.>**-> used for moving the cursor on the given line number.
+9. **/ <word> **-> used for searching words in a file.
+10. **: <LineNo.> **-> used for moving the cursor on the given line number.
 11. **gg**-> if for moving the cursor on home page or the starting of the file.
 12. **G**-> Moving the cursor on the last of the file.
 13. **w**-> used for moving the cursor on the starting of the next word.
