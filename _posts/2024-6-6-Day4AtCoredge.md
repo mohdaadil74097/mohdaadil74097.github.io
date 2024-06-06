@@ -50,4 +50,9 @@ syntax with number of lines use 'n' before the operation where 'n' stands for nu
 13. **w**-> used for moving the cursor on the starting of the next word.
 14. **b**-> used for moving the cursor on the starting of the previous word.
 15. **d**-> used for deleting the selected line in a file.
-16. **u**-> undo the changes in a file
+16. **u**-> undo the changes in a file.
+17. **x**-> deletes the letter without going in the insert mode.
+18. **r**-> it replaces the letter under the cursor.
+19. **nw**-> used for jumping n number of words.
+20. **ndw**-> for deleting the number of words.
+
