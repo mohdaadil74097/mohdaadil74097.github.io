@@ -58,11 +58,11 @@ Multi
 
 **Example**
 
-'#!/bin/bash'
+- '#!/bin/bash'
 
-'# Hello this is single line comment.'
+- '# Hello this is single line comment.'
 
-'<< Hello this is multi line comment ends with
+- '<< Hello this is multi line comment ends with
 Hello'
 
 
