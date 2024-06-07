@@ -108,9 +108,13 @@ echo ${#arr[*]} #It gives the total number of character in an array.
 #How to add characters in array.
 
 arr+=( 5 6 7 8 )
+
 echo ${arr[*]}
+
 declare -A array
+
 array=( [name]=paul [age]=22 )
+
 echo ${array[name]}
 
 **4.String Operation**
@@ -119,12 +123,13 @@ A string is a sequence of characters treated as a single piece of text. Strings 
 
 #!/bin/bash
 
-set -x
-set -u
-
 myvar="Hello World"
+
 length=${#myvar} # For printing the length of the variable.
+
 upper=${myvar^^} # For printing the variable in upper case.
+
 replace=${myvar/World/Aadil} # Replace the word
+
 slice=${myvar:6:11}
 
