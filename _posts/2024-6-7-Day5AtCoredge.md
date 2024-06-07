@@ -37,6 +37,7 @@ By putting commands in a script, you can automate repetitive tasks. For example,
 - (iii) Just give the full path of the file that is absolute path.
 5. Ctrl+C is used to stop the running script.
 6. Ctrl+Z is used to stop a running script.
+
 **Example of Basic Script**
 
 #!/bin/bash  -> Shebang Line.
@@ -45,27 +46,34 @@ By putting commands in a script, you can automate repetitive tasks. For example,
 
 
 **Topics which we will discuss in the shell scripting**
-**
+
 
 **1.Comments**
 Comments are used to give a context to the user. Comment is generally starts wiht 
+
 #And the comment which you want to give, 
+
 <<Multi Line Comment
 Multi
 
 **Example**
-#!/bin/bash
-# Hello this is single line comment.
-<< Hello this is multi line comment ends with
-Hello
+
+'#!/bin/bash'
+'# Hello this is single line comment.'
+'<< Hello this is multi line comment ends with
+Hello'
 
 
 **2.Variables**
+
 ->Variables are like containers that hold data. It may be string,float,integer,etc.
 
 **Example**
 Name="Aadil Islam"
 
 echo $Name
+
+It will print the value inside the variable Name.
+
 
 
