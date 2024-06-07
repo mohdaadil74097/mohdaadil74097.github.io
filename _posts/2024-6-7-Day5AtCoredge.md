@@ -101,8 +101,11 @@ echo "${myArr[1]}"
 **Some Operations to do on array**
 
 arr=( 1 2 3 hello "Aadil Islam" )
+
 echo ${arr[0]}  #It gives the value from 1st index.
+
 echo ${arr[*]:0:4} #It gives the values from 0th index to 3rd index.
+
 echo ${#arr[*]} #It gives the total number of character in an array.
 
 #How to add characters in array.
