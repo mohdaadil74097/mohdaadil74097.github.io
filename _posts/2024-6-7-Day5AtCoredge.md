@@ -69,13 +69,62 @@ Hello'
 **2.Variables**
 
 ->Variables are like containers that hold data. It may be string,float,integer,etc.
+**1.Local Variable**
+**2.Constant Variables**
 
-**Example**
+
+
+**Example of Local Variable**
 Name="Aadil Islam"
 
 echo $Name
 
 It will print the value inside the variable Name.
 
+**Example of Constant Variable**
 
+readonly college="Rajshree Group Of Institute"
+echo $college
+
+**3.Arrays**
+
+Array is a data structure that allows you to **store multiple values in a single variable**.
+It is generally written inside the parenthesis that is **()** .
+
+**Example of array**
+myArr=( 1  2 3 hello "Hey man" )
+
+**How to extract values from it**
+echo "${myArr[0]}"
+echo "${myArr[1]}"
+
+**Some Operations to do on array**
+
+arr=( 1 2 3 hello "Aadil Islam" )
+echo ${arr[0]}  #It gives the value from 1st index.
+echo ${arr[*]:0:4} #It gives the values from 0th index to 3rd index.
+echo ${#arr[*]} #It gives the total number of character in an array.
+
+#How to add characters in array.
+
+arr+=( 5 6 7 8 )
+echo ${arr[*]}
+declare -A array
+array=( [name]=paul [age]=22 )
+echo ${array[name]}
+
+**4.String Operation**
+
+A string is a sequence of characters treated as a single piece of text. Strings can include letters, numbers, symbols, and spaces. They are used to store and manipulate text data within scripts. Strings are typically defined by enclosing the text in single quotes (') to preserve literal values or double quotes (") to allow variable and special character interpretation.
+
+#!/bin/bash
+
+set -x
+set -u
+
+myvar="Hello World"
+length=${#myvar} # For printing the length of the variable.
+upper=${myvar^^} # For printing the variable in upper case.
+replace=${myvar/World/Aadil} # Replace the word
+slice=${myvar:6:11}
 
