@@ -47,16 +47,28 @@ Note-> File system is a method of storing files on hard disk.
 **Structure of FileSystem**
 
 **/boot** -> It is having files used by boot loader (eg-> grub).
+
 **/dev** -> It is having device files (/dev/sda,/dev/nvme,etc).
+
 **/etc** -> It is having all the configuration files.
+
 **/usr/bin** -> It is having all the binaries.
+
 **/usr/sbin** -> It is having system binaries of the root directory.
+
 **/proc** -> It is having all the files related to running processes.
+
 **/usr/lib** -> It is having C program library files.
+
 **/tmp** -> It is having temporary files which removes when the system boots.
+
 **/home** -> It is having all the user's home directory.
+
 **/root** -> It is a home directory for root user.
+
 **/var** -> It is having all the system logs.
+
 **/run** -> It is having system daemons that starts very early.
+
 **/mnt** -> To mount external filesystem,etc.
 
