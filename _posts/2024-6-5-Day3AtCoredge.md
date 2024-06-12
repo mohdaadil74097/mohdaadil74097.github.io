@@ -24,5 +24,16 @@ So I am starting with one of these topic which is Basic commands in linux and sh
  - **man** - used for reading the manual of a command.
  - **cat** - used for printing the content inside a file.
  - **man** - used for reading the manual of a command.
+ - **diff** -  it is used for showing the difference between the two files
+ - **shred -u or --remove file-name** -  it is used for permanently deleting the file as it is not recover.
+ - **file** -  it is used for check the type of the file i,e. mp3,jpg,etc file.
+ - **2>** - is used to redirect the error shows on display in a file.
+ - **2>&1** - is used to redirect both error and output in a file.
+ - **sort** - it is used for sorting the content of the file.
+ - **sed 's/good/hood/g' filename** - it is used for changing the same multiple string with another one. 
+ - **alias (alias <shrtcut>="command name")** - it is used for making the shortcut of the long command.
+ - **lsusb** - is used to list the connected usb's.
+ - **split -l 5  file-name** - it is used for spllitting the file
+ - **eog filename or xdg-open filename** - it is used for opening the image in command line interface.
 
 ---
