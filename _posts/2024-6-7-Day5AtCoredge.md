@@ -108,7 +108,7 @@ echo ${arr[*]:0:4} #It gives the values from 0th index to 3rd index.
 
 echo ${#arr[*]} #It gives the total number of character in an array.
 
-#How to add characters in array.
+**How to add characters in array.**
 
 arr+=( 5 6 7 8 )
 
@@ -124,8 +124,9 @@ echo ${array[name]}
 
 A string is a sequence of characters treated as a single piece of text. Strings can include letters, numbers, symbols, and spaces. They are used to store and manipulate text data within scripts. Strings are typically defined by enclosing the text in single quotes (') to preserve literal values or double quotes (") to allow variable and special character interpretation.
 
+***
 #!/bin/bash
-
+***
 myvar="Hello World"
 
 length=${#myvar} # For printing the length of the variable.
@@ -135,4 +136,20 @@ upper=${myvar^^} # For printing the variable in upper case.
 replace=${myvar/World/Aadil} # Replace the word
 
 slice=${myvar:6:11}
+
+
+**Difference between For Loop and While Loop**
+**For Loop**
+It is used when you know in advance how many times you want to execute a statement or a block of statements.
+
+It is used when the number of iteration is known.
+
+We can use for loop when we know the list or range of items to iterate over.
+
+**While Loop**
+It is used when the number of iteration is not known.
+
+Means when you don't know about how many times you want to execute a statement or a block of statements.
+
+While loop is used when we have to work with condition like the code executes untill the condition is true.
 

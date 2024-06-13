@@ -31,6 +31,15 @@ linux machine.
    escap key, 'w' for write and 'q' is for quite and ! .
 6. Now your file has been edited.
 
+
+**For opening two files in two different terminal for comparing**
+vim -d filename1 filename2
+
+It is not used for editing the file
+
+vim -o filename1 filename2 
+It is used for editing the file with compraision
+
 **Playing with file inside the VIM**
 
 We can do these things in command mode
@@ -55,4 +64,4 @@ syntax with number of lines use 'n' before the operation where 'n' stands for nu
 18. **r**-> it replaces the letter under the cursor.
 19. **nw**-> used for jumping n number of words.
 20. **ndw**-> for deleting the number of words.
-
+21. **terminal**-> Used for making two terminals vertically.
