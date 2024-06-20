@@ -41,6 +41,8 @@ Container -> Image -> Image Repository
 **docker search image_name**-> Used for searching the images from docker repository which is docker hub.
 **docker attach container_name**-> Used to go inside the running container.
 **docker exec -it containerID command**-> Used for going in the container.
+**docker commit container_name image_name**-> Used for creating the images from container.
+**docker build -t name . **-> For creating image from Dockerfile.
 
 **What is a docker file How can we create it?**
 
