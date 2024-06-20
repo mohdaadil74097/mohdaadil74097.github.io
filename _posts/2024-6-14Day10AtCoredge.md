@@ -10,7 +10,7 @@
 
 **What is Docker?**
 
-Docker is a tool which is used to  make, manage and run containers with the help of image which is on docker hub or any other registry site.
+Docker is an open source tool which is used to  make, manage and run containers with the help of image which is on docker hub or any other registry site.
 Docker is a tool which is used to create container.
 
 **What does container contains?**
