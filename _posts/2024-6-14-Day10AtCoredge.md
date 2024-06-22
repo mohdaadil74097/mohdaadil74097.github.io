@@ -1,5 +1,16 @@
 ---
  layout: post
+ title: Day 6 At Coredge as a linux admin trainee
+ date: 2024-6-10
+---
+
+**It's day six as a Linux Admin Trainee at Coredge and it is a great day!**
+
+**Here is my today's tasks to do research on Docker**
+
+
+---
+ layout: post
  title: Day 10 At Coredge as a linux admin trainee
  date: 2024-6-14
 ---
@@ -26,6 +37,7 @@ Everything which is needed to run an application is containned by the container.
 **Note-> Containerization virtualize the OS**
 **Note-> Container creates automatically when we run images pulled from docker or any other registry**
 **Note-> If we wnat to come out from the container without stopping it then we have to press Ctrl+p+q**
+
 **Process of containerization**
 Container -> Image -> Image Repository
 
@@ -54,9 +66,11 @@ Docker file is a text file with some instruction to build an image
 3.After opening it we have to give some instruction in it like 
 
 FROM baseimage
-MAINTAINER NameOfTheMaintainer
-RUN commandwhichyouwanttorunwhentheimageisbuild
-CMD commandwhichyouwanttorunwhenanypersonsendstherequesttoitsIP
 
+MAINTAINER NameOfTheMaintainer
+
+RUN commandwhichyouwanttorunwhentheimageisbuild
+
+CMD commandwhichyouwanttorunwhenanypersonsendstherequesttoitsIP
 
 
