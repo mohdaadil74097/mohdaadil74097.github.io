@@ -1,13 +1,3 @@
----
- layout: post
- title: Day 6 At Coredge as a linux admin trainee
- date: 2024-6-10
----
-
-**It's day six as a Linux Admin Trainee at Coredge and it is a great day!**
-
-**Here is my today's tasks to do research on Docker**
-
 
 ---
  layout: post
