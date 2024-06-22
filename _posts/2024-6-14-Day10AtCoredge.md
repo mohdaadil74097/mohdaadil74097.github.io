@@ -80,3 +80,54 @@ RUN commandwhichyouwanttorunwhentheimageisbuild
 CMD commandwhichyouwanttorunwhenanypersonsendstherequesttoitsIP
 
 
+**Docker Volume**
+
+Docker volume is a directory which is generally used to share the volumes between the containers.
+
+We can make docker volume or share docker volume only when we create the docker container.
+
+We can make docker volume by two types.
+
+1-> By making a Dockerfile
+
+FROM BaseImageName
+VOLUME ["VolumeName"]
+
+Close the file and run it by using the command.
+
+**docker build -t(tags) ImageName(myimage) . or pathofthedirectoryofDockerfile**
+
+After building the image run the container by using the command to create a docker volume.
+
+**docker run -it --name containername(cont1) imagename(myimage) commname(/bin/bash)**
+
+The above command is used to make the container run with docker volume.
+
+Now for sharing the docker volume we have to give the command.
+
+**docker run -it --name container2 --priviledge=true --volumes-from container1 ImageName CommName**
+
+
+
+Now if we do the same task by using the command line mode.
+
+**docker run -it --name container3 -v volname imagename(ubuntu) command(/bin/bash)**
+
+The above command is used to create the docker volume with container3.
+
+Now if we want to share this volume with container 4 then we have to give the command.
+
+**docker run -it --name container3 --priviledge=true --volumes-from container3 ImageName CommName**
+
+
+**Some basic commands related to Docker volume**
+
+**docker volume ls** -> for listing all the docker volumes.
+
+**docker volume create volname** -> Used for creating the docker volume.
+
+**docker volume rm volname** -> Used for removing the docker volume.
+
+**docker volume prune** -> Used for removing all unused docker volumes.
+
+**docker volume inspect volname** -> Used for inspecting the volume.
