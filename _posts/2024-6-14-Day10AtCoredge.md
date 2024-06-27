@@ -91,6 +91,7 @@ We can make docker volume by two types.
 1-> By making a Dockerfile
 
 FROM BaseImageName
+
 VOLUME ["VolumeName"]
 
 Close the file and run it by using the command.
@@ -131,3 +132,68 @@ Now if we want to share this volume with container 4 then we have to give the co
 **docker volume prune** -> Used for removing all unused docker volumes.
 
 **docker volume inspect volname** -> Used for inspecting the volume.
+
+
+**Docker Networking**
+
+A Docker network is basically a connection between one or more containers.
+
+**Types of Network in Docker**
+
+1-> Bridge Network
+
+2-> Host Network
+
+3-> Overlay Network
+
+4-> Macvlan Network
+
+5-> None Network
+
+**Commands related to Docker Network**
+
+**docker run -it -d --name conName --network netName imName comName** -> Used for assigning the network as well as run the container.
+
+**docker run -it -d --name cont3 --network AadilNetwork ubuntu bash** -> This command is used to assign the AadilNetwork to the container name cont3 and the image name is ubuntu.
+
+**docker inspect cont_name** -> Used for inspecting the container.
+
+**docker exec -it cont_name bash**-> To go inside the container.
+
+**docker network create network_name**-> Used to create a new network.
+
+**docker network ls**-> Used to list the network.
+
+**docker network rm AadilNetwork**-> Used for removing the Network.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
