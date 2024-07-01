@@ -33,15 +33,15 @@ Kubernetes denotes by K8s.
 An API-Gateway is like a front door for all the requests that come to your application from clients.
 It manages and simplifies how clients interact with the backend services of an application.
 
-**There are various platform to practice Kubernetes if your system is not compatible to work on kubernetes.
+**There are various platform to practice Kubernetes if your system is not compatible to work on kubernetes.**
 
 . Kubernetes playground.
 
 . Play with K8s.
 
-. Play with kubernetes classroom.**
+. Play with kubernetes classroom.
 
-**Features of Kubernetes.
+**Features of Kubernetes.**
 
 . Orchestration tool.
 
@@ -49,9 +49,153 @@ It manages and simplifies how clients interact with the backend services of an a
 
 . Fault tolerance (make new container/pod when the old one is defected).
 
-. Health monitoring of the containers.**
+. Health monitoring of the containers.
 
 **Note-> Scripts written in kubernetes is in the JSON or YAML language and this script is called Manifest.**
 
 **Note-> Pod is the smalles unit on which kubernetes works.**
+
+
+**Cluster -> Node -> Pod -> Container -> Application/Microservices.**
+
+**Architecture of Kubernetes.**
+
+In kubernetes there are two types of nodes, one is Master node and the other is Worker node.
+
+Master node is used to controll the Worker node.
+
+Worker node is the node where we can do tasks with the help of Master node.
+
+
+**Components of Master or Controll node**
+
+There are four parts of Controll node on which it works.
+
+**Kube-API-server** -> This api server interacts direct with the user (i.e, we apply .yml or json manifest to kube-apiserver).
+
+**etcd(key-value)** -> Stores metadata(data of data) and status of cluster.
+
+**Kubescheduler** -> When users make request for the creation and management of pods,kube-scheduler is going to take action on these requests.
+Handle pod creation and management.
+
+**Controller Manager** -> It makes sure that the actual state of cluster must be equal to desired state of cluster.
+
+
+**Components of Worker node**
+
+Node is going to run on 3 important piece of software/process.
+
+**Kubelet** -> It is atype of agent running on the node, it listens kubernetes master, uses port 10255, send success/fail reports to master.
+
+**Container Engine** -> It works with kubelet,pulling images,start/stop containers, exposing container ports.
+
+**Kube proxy** -> Assign IP to each pod, It is required to assign IP addresses to pods(dynamic),
+runs on node and make sure that each pod get its IP or not.
+
+
+**POD**
+
+. Smallest unit in kubernetes on which we can work is called pod.
+. Pod is a group of one or more than one containers that are deployed together on the host.
+. A cluster is a group of master & worker node.
+. Pod contains one or more tightly coupled containers.
+. Pod runs on node which is controlled by master.
+
+Note-> Generally we have to create one container in one pod.
+
+**Installation of Kubernetes**
+
+**PREREQUISITES**
+
+**System Requirements:**
+
+Two or more Linux machines (Ubuntu 20.04 or CentOS 7).
+
+Each machine should have at least 2GB of RAM and 2 CPUs but recommended for Master have 4GB of RAM and 2CPUs.
+
+Unique hostname, MAC address, and product_uuid for each node.
+
+Swap disabled.
+
+**Network Configuration:**
+
+All nodes should be able to communicate with each other.
+
+Ensure firewall rules allow traffic between nodes on required ports.
+
+**Step-by-Step Installation**
+
+**Step 1: Update and Upgrade the System**
+
+sudo apt-get update
+
+sudo apt-get upgrade -y
+
+**Step 2: Install Docker**
+
+sudo apt-get install -y docker.io
+
+sudo systemctl enable docker
+
+sudo systemctl start docker
+
+**Step 3: Install kubeadm, kubelet, and kubectl**
+
+**Add the Kubernetes APT repository:**
+
+sudo apt-get update
+
+sudo apt-get install -y apt-transport-https ca-certificates curl
+
+sudo curl -fsSL https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add.
+
+echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
+
+**Install the packages:**
+
+sudo apt-get update
+
+sudo apt-get install -y kubelet kubeadm kubectl
+
+sudo apt-mark hold kubelet kubeadm kubectl
+
+
+**Step 4: Disable Swap**
+
+sudo swapoff -a
+
+**Step 5: Initialize the Master Node**
+
+On the master node, run:
+
+sudo kubeadm init
+
+You will get a long command started with "Kubeadm join 172.31......................" copy this command on the notepad.
+
+**Step 6: Configure kubectl for the Master Node**
+
+mkdir -p $HOME/.kube
+
+sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+
+sudo chown $(id -u):$(id -g) $HOME/.kube/config
+
+**Step 7: Install a Pod Network Add-on**
+For this example, we will use Flannel:
+
+kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
+
+**Step 8: Join Worker Nodes to the Cluster**
+On each worker node, run the command copied from Step 5:
+
+sudo kubeadm join master-node-ip:port --token token --discovery-token-ca-cert-hash sha256:hash
+
+**Step 9: Verify the Cluster**
+On the master node, run:
+
+kubectl get nodes
+
+
+
+
 
