@@ -232,10 +232,15 @@ kubectl get nodes
 **Basic Kubernetes manifest or .yml file.**
 
 kind: Pod or Replicationcontroller(RC) or Replicaset(RS)
+
 apiVersion: v1
+
 metadata:
+
   name: pod_name
+
 spec:
+
   containers:
 
     - name: container_name
