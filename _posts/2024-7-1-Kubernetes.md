@@ -196,8 +196,6 @@ On the master node, run:
 kubectl get nodes
 
 
-**DATE-2nd of July 2024**
-
 **There are some basic Objects in Kubernetes which are as follows.**
 
 (i) Pod
@@ -236,11 +234,9 @@ kind: Pod or Replicationcontroller(RC) or Replicaset(RS)
 apiVersion: v1
 
 metadata:
-
   name: pod_name
 
 spec:
-
   containers:
 
     - name: container_name
@@ -272,4 +268,52 @@ It is a basic manifest or .yml file for making a pod having two containers in it
 
 **kubectl logs -f pod_name -c container_name** -> Give the command which is running in that specific container.
 
+**kubectl exec pod_name -it -c container_name -- /bin/bash** -> Used for getting into the specififc container of specific pod.
 
+**kubectl delete -f pod_name** -> It is used to delete the pod.
+
+**kubectl delete -f manifest_or_.yml_file** -> when we delete the manifest by using this command it automatically delete the pod and containers made by this manifest.
+
+**Labels and Selectors**
+
+Unlike name/UIDs, Labels do not provide uniquness, as we can expect many objects to carry the same label.
+
+Once labels are attached to an object, we would need filters to narrow down and these filters are called label selectors.
+
+The api supports two types of selectors -> Equality Based and Set Based.
+
+
+**Equality Based** (=(equal),!=(not equal))
+name: aadil
+class: nodes
+project: development
+
+**Set Based** (in,notin & exists)
+env in (production,dev)
+env notin(team1,team2).
+
+
+**kubectl label pods pod_name name=xyz** -> Used to give the label(or tag) to the pod based on their name.
+
+**kubectl get pods --show-labels** -> Used to show the labels of the pods.
+
+**kubectl get pods -l env=development** -> Used to list the pods which is having the label matched by given command's variable.
+
+**kubectl get pods -l env!=development** -> Used to list the pods which are not matching the label.
+
+**kubectl delete pods -l env=development** -> Used for deleting the pods which is having a matching label.
+
+**kubectl get pods -l 'env in(dev,testing)'** -> Used to get the pods which are having labels like dev or testing.
+
+**kubectl get pods -l 'env notin(dev,testing)'** -> Used to get the pods which are not having labels like dev or testing.
+
+**kubectl get pods -l class=pods,myname=aadil** -> Used to get the pods which are having labels with key and its value.
+
+
+**Node-Selector**
+
+Node selector means to select a node to do a particular task on it, we can select it by using labels.
+
+You can tell a pod to only be able to run on particular nodes.
+
+We can use labels to tag nodes. 
