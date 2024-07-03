@@ -196,6 +196,74 @@ On the master node, run:
 kubectl get nodes
 
 
+**DATE-2nd of July 2024**
 
+**There are some basic Objects in Kubernetes which are as follows.**
+
+(i) Pod
+(ii) Service
+(iii) Volume
+(iv) Namespace
+(v) Replicasets
+(vi) Secrets
+(vii) Config Maps
+(viii) Deployments
+(ix) Jobs
+(x) Daemonsets
+
+**Relationship between these objects.**
+
+-> Pods manages containers.
+
+-> Replicaset manage pods.
+
+-> Services expose pod process to the outside world.
+
+-> Configmaps and secrets helps you configure pods.
+
+**Types of setup for kubernetes.**
+
+(i) All in one single node installtion.
+
+(ii) Single-Node etcd, Single Master and Multi Worker.
+
+(iii) Single-Node etcd, Multi Master and Multi Worker.
+
+**Basic Kubernetes manifest or .yml file.**
+
+kind: Pod or Replicationcontroller(RC) or Replicaset(RS)
+apiVersion: v1
+metadata:
+  name: pod_name
+spec:
+  containers:
+    - name: container_name
+      image: image_name
+      command: ["/bin/bash", "-c", "while true; do echo; hello this is for kubernetes; sleep 2s; done"]
+   
+    - name: container_name
+      image: image_name
+      command: ["/bin/bash", "-c", "while true; do echo; hello this is for kubernetes; sleep 2s; done"]
+
+-> press escap then : then wq and enter
+
+It is a basic manifest or .yml file for making a pod having two containers in it.
+
+
+**Commands of kubernetes to play with manifest**
+
+**kubectl apply -f manifest_or_filename** -> For running the file or applying the file which makes pods and containers.
+
+**kubectl get pods manifest_or_filename** -> It gives the detail of the pods.
+
+**kubectl get nodes** -> It gives the information about the nodes.
+
+**kubectl get nodes ip_specific_node** -> It gives the detailed info of selected node.
+
+**kubectl describe node ip_specific_node** -> Gives detailed info about the node.
+
+**kubectl logs -f pod_name**(only when 1pod have 1container) -> Gives the command which is given in manifest.
+
+**kubectl logs -f pod_name -c container_name** -> Give the command which is running in that specific container.
 
 
