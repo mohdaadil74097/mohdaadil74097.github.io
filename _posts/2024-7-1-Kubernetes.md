@@ -316,4 +316,143 @@ Node selector means to select a node to do a particular task on it, we can selec
 
 You can tell a pod to only be able to run on particular nodes.
 
-We can use labels to tag nodes. 
+We can use labels to tag nodes.
+
+**Replication Controller**
+
+A ReplicaController is a component in Kubernetes that ensures a specified number of pod replicas are running at any given time. If a pod goes down, the ReplicaController replaces it. It provides high availability and scalability for applications.
+
+**Key Points about ReplicaController:**
+
+**Purpose:** Ensures a specified number of pod replicas are running.
+
+**Functionality:** Automatically replaces pods if they fail or are deleted.
+
+**Use Case:** Helps maintain application stability and availability. 
+
+**Commands Related to RC**
+
+Create a ReplicaController: kubectl create -f file-name.yaml
+
+Get ReplicaControllers: kubectl get rc
+
+Describe a ReplicaController: kubectl describe rc replica-controller-name
+
+Scale a ReplicaController: kubectl scale --replicas=number-of-replicas rc/replica-controller-name
+
+Delete a ReplicaController: kubectl delete rc replica-controller-name
+
+**Here’s a basic YAML configuration file for a ReplicaController:**
+
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: my-replication-controller
+spec:
+  replicas: 3
+  selector:
+    app: my-app
+  template:
+    metadata:
+      labels:
+        app: my-app
+    spec:
+      containers:
+      - name: my-container
+        image: nginx:latest
+        ports:
+        - containerPort: 80
+
+**Example Scenario**
+
+Let’s say you have a web application that needs to be highly available. You can use a ReplicaController to ensure that there are always 3 instances (pods) of your web application running. If one pod crashes, the ReplicaController will automatically create a new one to replace it, maintaining the desired state of 3 running instances. This helps ensure that your application remains available to users even if some instances fail.
+
+**Replica Set**
+
+A ReplicaSet in Kubernetes is a newer mechanism (compared to ReplicaController) to maintain a stable set of replica pods running at any given time. The ReplicaSet ensures that a specified number of pod replicas are running at all times. It provides similar functionality as ReplicaController but with additional features.
+
+**Key Points about ReplicaSet:**
+
+**Purpose:** Ensures a specified number of pod replicas are running.
+
+**Functionality:** Automatically replaces pods if they fail or are deleted.
+
+**Use Case:** Provides high availability and scalability for applications.
+
+**Enhancements:** Supports set-based label selectors, which makes it more powerful than ReplicaController.
+
+
+**Commands Related to Replica Set**
+
+Create a ReplicaSet: kubectl create -f file-name.yaml
+
+Get ReplicaSets: kubectl get rs
+
+Describe a ReplicaSet: kubectl describe rs replica-set-name
+
+Scale a ReplicaSet: kubectl scale --replicas=number-of-replicas rs/replica-set-name
+
+Delete a ReplicaSet: kubectl delete rs replica-set-name
+
+
+**Here’s a basic YAML configuration file for a ReplicaSet:**
+
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: my-replica-set
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: my-app
+  template:
+    metadata:
+      labels:
+        app: my-app
+    spec:
+      containers:
+      - name: my-container
+        image: nginx:latest
+        ports:
+        - containerPort: 80
+
+**Example Scenario**
+
+Let’s say you have a microservice that needs to be highly available and scalable. You can use a ReplicaSet to ensure that there are always 3 instances (pods) of your microservice running. If one pod crashes, the ReplicaSet will automatically create a new one to replace it, maintaining the desired state of 3 running instances. This helps ensure that your microservice remains available to users even if some instances fail.
+
+
+**Deployment**
+
+A Deployment in Kubernetes is a higher-level resource that manages ReplicaSets and provides declarative updates to applications running within a cluster. It allows you to define and manage applications, including their replicas and lifecycle.
+
+**Key Points about Deployment:**
+
+**Purpose:** Manages ReplicaSets and provides declarative updates to applications.
+
+**Functionality:** Handles creating, updating, and scaling application replicas.
+
+**Use Case:** Provides a way to define application lifecycle management in a Kubernetes cluster.
+
+**Features:**
+
+Rolling Updates: Deployments support rolling updates to your application, ensuring zero downtime by gradually updating replicas.
+
+Rollback: If a deployment update fails or causes issues, you can easily roll back to a previous stable version.
+
+Scaling: Easily scale your application by adjusting the replica count in the deployment specification.
+
+
+**Commands related to deployment**
+
+Create a Deployment: kubectl create -f file-name.yaml
+
+Get Deployments: kubectl get deployments
+
+Describe a Deployment: kubectl describe deployment deployment-name
+
+Scale a Deployment: kubectl scale --replicas=number-of-replicas deployment/deployment-name
+
+Update a Deployment: kubectl apply -f updated-file-name.yaml
+
+Rollback a Deployment: kubectl rollout undo deployment/deployment-name
