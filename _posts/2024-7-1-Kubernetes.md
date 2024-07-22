@@ -233,7 +233,7 @@ kubectl get nodes
 
 kind: Pod or Replicationcontroller(RC) or Replicaset(RS)
 
-`apiVersion: v1
+apiVersion: v1
 
 metadata:
   name: pod_name
@@ -245,7 +245,7 @@ spec:
       command: ["/bin/bash", "-c", "while true; do echo; hello this is for kubernetes; sleep 2s; done"]   
     - name: container_name
       image: image_name
-      command: ["/bin/bash", "-c", "while true; do echo; hello this is for kubernetes; sleep 2s; done"]`
+      command: ["/bin/bash", "-c", "while true; do echo; hello this is for kubernetes; sleep 2s; done"]
 
 -> press escap then : then wq and enter
 
