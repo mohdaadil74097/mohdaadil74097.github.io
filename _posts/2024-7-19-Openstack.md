@@ -57,3 +57,4 @@ For listing the volume
 For Deleting the volume 
  - openstack volume delete vol_name or vol_id
 
+**SWIFT (Object Storage Services)**
