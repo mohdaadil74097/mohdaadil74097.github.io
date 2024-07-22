@@ -78,3 +78,53 @@ For Deleting the volume
  - openstack volume delete vol_name or vol_id
 
 **SWIFT (Object Storage Services)**
+
+For Uploading an object
+
+ - openstack upload container_name file_name
+
+For Listing the object
+
+ - openstack object list container_name
+
+For Downloading an object
+
+ - openstack object save container-name object-name
+
+**GLANCE (Image Service)**
+
+For uploading an image
+
+ - openstack image create --file image_file --disk-format format --container-format cont_format image_nae
+
+For listing the images
+
+ - openstack image list
+
+For deleting an image
+ 
+ - openstack image delete image_id
+
+**KEYSTONE (Identity Service)**
+
+For creating a new user
+
+ - openstack user create --domain default --password-prompt newuser
+
+For adding a project
+
+ - openstack project create --domain domain_name --description "proj_description" proj_name
+
+For listing the project
+ 
+ - openstack project list
+
+For listing the user
+
+ - openstack user list
+
+**HORIZON (Dashboard)**
+
+For GUI Login
+
+ - http://your-openstack-ip/dashboard
