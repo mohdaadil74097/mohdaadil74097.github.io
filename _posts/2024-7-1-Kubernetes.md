@@ -230,9 +230,9 @@ kubectl get nodes
 **Basic Kubernetes manifest or .yml file.**
 
 
-`
-kind: Pod or Replicationcontroller(RC) or Replicaset(RS)
 
+kind: Pod or Replicationcontroller(RC) or Replicaset(RS)
+`
 apiVersion: v1
 
 metadata:
@@ -249,7 +249,6 @@ spec:
       image: image_name
       command: ["/bin/bash", "-c", "while true; do echo; hello this is for kubernetes; sleep 2s; done"]
 `
-
 -> press escap then : then wq and enter
 
 It is a basic manifest or .yml file for making a pod having two containers in it.
