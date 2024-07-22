@@ -228,6 +228,7 @@ kubectl get nodes
 (iii) Single-Node etcd, Multi Master and Multi Worker.
 
 **Basic Kubernetes manifest or .yml file.**
+---
 
 kind: Pod or Replicationcontroller(RC) or Replicaset(RS)
 
@@ -246,6 +247,8 @@ spec:
     - name: container_name
       image: image_name
       command: ["/bin/bash", "-c", "while true; do echo; hello this is for kubernetes; sleep 2s; done"]
+
+---
 
 -> press escap then : then wq and enter
 
