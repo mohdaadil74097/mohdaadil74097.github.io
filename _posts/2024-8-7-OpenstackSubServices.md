@@ -38,3 +38,11 @@ Keystone is the identity service in OpenStack that handles authentication and au
 **HORIZON (Dashboard)**
 
 Horizon is the web-based dashboard for managing OpenStack services and resources.
+
+
+**SubServices Of NOVA**
+
+**Nova-Compute:** Manages the lifecycle of compute instances (virtual machines) on physical hosts.
+**Nova-Scheduler:** Decides which compute node should run a new instance based on various criteria.
+**Nova-Conductor:** Handles database interactions and message queuing, helping to manage the state of compute instances.
+**Nova-API:** Provides the API endpoints for interacting with Nova, handling requests from users and other OpenStack services.
