@@ -39,6 +39,7 @@ Keystone is the identity service in OpenStack that handles authentication and au
 
 Horizon is the web-based dashboard for managing OpenStack services and resources.
 
+**SUB-SERVICES**
 
 **Sub-Services Of NOVA**
 
@@ -61,3 +62,42 @@ Horizon is the web-based dashboard for managing OpenStack services and resources
 **L3 Agent:** Handles routing and network address translation (NAT) for virtual networks.
 
 **DHCP Agent:** Provides dynamic IP address assignment to instances.
+
+**Sub-Services of Glance**
+
+**Glance-API:** Provides the API endpoints for managing and interacting with images, handling requests for image creation, retrieval, and deletion.
+
+**Glance-Registry:** Manages metadata about images and provides this information to the API service. It handles tasks such as image registration and metadata storage.
+
+**Glance-Store:** Manages the actual storage of image data. This component handles where and how images are stored, including interaction with various storage backends.
+
+**Sub-Services of CINDER**
+
+**Cinder-API:** Provides the API endpoints for interacting with Cinder, handling requests for creating, managing, and deleting block storage volumes.
+
+**Cinder-Scheduler:** Determines which storage backend should handle a new volume request based on various criteria and policies.
+
+**Cinder-Volume:** Manages the lifecycle of block storage volumes, including their creation, attachment to instances, and deletion. It interacts with storage backends to provision and manage volumes.
+
+**Cinder-Backup:** Manages backups of block storage volumes, including creating and restoring backups.
+
+**Sub-Services of SWIFT**
+
+**Swift-Proxy:** Handles incoming API requests for storing, retrieving, and managing object data. It routes requests to the appropriate Swift storage nodes.
+
+**Swift-Account Server:** Manages account-level metadata and information about containers within the account.
+
+**Swift-Container Server:** Manages container-level metadata and organizes objects within containers.
+
+**Swift-Object Server:** Stores the actual object data. It handles reading and writing object data to the storage backend.
+
+
+**Sub-Services of KEYSTONE**
+
+**Keystone-API:** Provides the API endpoints for authentication and authorization, handling requests for user login, token issuance, and role management.
+
+**Keystone-Endpoint:** Manages the service catalog, which includes the endpoints for various OpenStack services. It helps other services find each other.
+
+**Keystone-Worker:** Handles background tasks related to token validation and service management.
+
+
